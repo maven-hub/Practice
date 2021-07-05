@@ -1,6 +1,6 @@
 package basics.designpatterns.decorator;
 
-public interface Decorator {
+public interface Diversifiable {
     String getDescription();
     int getCost();
 }

@@ -1,26 +1,24 @@
 package basics.designpatterns.decorator;
 
-public class Caramel implements Decorator {
-    private Decorator decorator;
+public class Caramel implements Diversifiable {
+    private final Diversifiable diversifiable;
 
-    public Caramel(Decorator beverage) {
-        this.decorator = beverage;
+    public Caramel(Diversifiable diversifiable) {
+        this.diversifiable = diversifiable;
     }
 
     @Override
     public String getDescription() {
-        return decorator.getDescription() + " Added caramel";
+        return diversifiable.getDescription() + " with Caramel";
     }
 
     @Override
     public int getCost() {
-        return decorator.getCost() + 6;
+        return diversifiable.getCost() + 6;
     }
 
     @Override
     public String toString() {
-        return "Caramel{" +
-                "decorator=" + decorator +
-                '}';
+        return "Caramel " + diversifiable;
     }
 }

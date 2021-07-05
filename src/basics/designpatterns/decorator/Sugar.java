@@ -1,26 +1,24 @@
 package basics.designpatterns.decorator;
 
-public class Sugar implements Decorator {
-    private Decorator decorator;
+public class Sugar implements Diversifiable {
+    private final Diversifiable diversifiable;
 
-    public Sugar(Decorator beverage) {
-        this.decorator = beverage;
+    public Sugar(Diversifiable diversifiable) {
+        this.diversifiable = diversifiable;
     }
 
     @Override
     public String getDescription() {
-        return decorator.getDescription() + " Added sugar";
+        return diversifiable.getDescription() + " with Sugar";
     }
 
     @Override
     public int getCost() {
-        return decorator.getCost() + 2;
+        return diversifiable.getCost() + 2;
     }
 
     @Override
     public String toString() {
-        return "Sugar{" +
-                "decorator=" + decorator +
-                '}';
+        return "Sugar " + diversifiable;
     }
 }
