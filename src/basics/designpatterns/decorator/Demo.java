@@ -19,8 +19,7 @@ public class Demo {
         System.out.println(beverages + "\n");
 
         for (Diversifiable el : beverages) {
-            System.out.println(el.getCost());
-            System.out.println(el.getDescription());
+            System.out.println(el.getDescription() + " is priced at: " + el.getCost());
             System.out.println();
         }
     }
