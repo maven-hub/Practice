@@ -2,13 +2,13 @@ package basics.designpatterns.adapter;
 
 import java.util.Arrays;
 
-public class UserSystemB {
+public class SystemYUser {
     private String name;
     private int screenNumber;
     private long age;
     private String[] privileges;
 
-    public UserSystemB(String name, int screenNumber, long age, String[] privileges) {
+    public SystemYUser(String name, int screenNumber, long age, String[] privileges) {
         this.name = name;
         this.screenNumber = screenNumber;
         this.age = age;

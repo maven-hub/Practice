@@ -2,13 +2,13 @@ package basics.designpatterns.adapter;
 
 import java.util.Set;
 
-public class UserSystemA {
+public class SystemXUser {
     private String name;
     private String surname;
     private String age;
     private Set<String> privileges;
 
-    public UserSystemA(String name, String surname, String age, Set<String> privileges) {
+    public SystemXUser(String name, String surname, String age, Set<String> privileges) {
         this.name = name;
         this.surname = surname;
         this.age = age;

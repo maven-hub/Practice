@@ -1,4 +1,4 @@
-package basics.arrayexceptions.objects;
+package basics.arrayexceptions;
 
 import basics.arrayexceptions.exceptions.*;
 
@@ -17,8 +17,8 @@ public class IntegerArray {
         this.array = new int[size];
     }
 
-    public void size() {
-        System.out.println(size);
+    public int getSize() {
+        return size;
     }
 
     public void print() throws EmptyArrayException {
@@ -37,11 +37,11 @@ public class IntegerArray {
         System.out.println();
     }
 
-    public void add(int element) throws ArrayOverflowException {
+    public void add(int value) throws ArrayOverflowException {
         if (index == size) {
             throw new ArrayOverflowException("Array is full");
         }
-        array[index] = element;
+        array[index] = value;
         index++;
     }
 

@@ -1,7 +1,6 @@
 package basics.arrayexceptions;
 
 import basics.arrayexceptions.exceptions.*;
-import basics.arrayexceptions.objects.IntegerArray;
 
 public class Demo {
     public static void main(String[] args) {

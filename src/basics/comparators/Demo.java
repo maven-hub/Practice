@@ -35,7 +35,7 @@ public class Demo {
 
         // sortowanie tablic za pomocą comparatora
         // tylko trzeba najpierw usunąć nadpisanie compareTo w Person
-        Arrays.sort(peopleArray, Comparator.comparing(Person::getName));
+        Arrays.sort(peopleArray, Comparator.comparing(Person::getAge));
         System.out.println(Arrays.toString(peopleArray));
 
     }
